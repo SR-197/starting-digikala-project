@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  position: relative;
+}
+
+@font-face {
+  font-family: Yekan;
+  src: url(../../fonts/yekan/IRANYekanWeb-Bold.eot);
+  src: url(../../fonts/yekan/IRANYekanWeb-Bold.ttf);
+  src: url(../../fonts/yekan/IRANYekanWeb-Bold.woff);
+  src: url(../../fonts/yekan/IRANYekanWeb-Bold.woff2);
+}
+@font-face {
+  font-family: Number;
+  src: url(../../fonts/belham/BElham.eot);
+  src: url(../../fonts/belham/BElham.woff);
+  src: url(../../fonts/belham/BElham.woff2);
+  src: url(../../fonts/belham/BElham.ttf);
+}
+:root {
+  --width: 100%;
+  --fontfamily:Yekan;
+  --fontnumber: Number;
+}
+.wrapper {
+  width: var(--width);
+  position: sticky !important;
+    left:0;
+    top:0;
+    z-index: 1000;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  border: 1px solid lightgrey;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 12px;
+  color: #424750;
+  font-weight: 2000;
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}

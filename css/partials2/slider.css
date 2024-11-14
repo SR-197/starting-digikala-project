@@ -1,0 +1,332 @@
+.slider {
+  width: var(--width);
+  height: 340px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 17px;
+  .slider-center {
+    width: 98%;
+    height: inherit;
+    background-color: crimson;
+    border-radius: 8px;
+    .top {
+      width: 100%;
+      height: 65px;
+      background-image: url(../../images/amazing-images/slider/pattern/deal-pattern\ \(1\).svg);
+      background-repeat: repeat-x;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      column-gap: 7px;
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 15px;
+      }
+      span {
+        display: block;
+        color: white;
+        font-family: var(--fontfamily);
+        font-size: 16px;
+      }
+    }
+    .bottom {
+      width: 100%;
+      height: calc(100% - 80px);
+      padding: 4px;
+      .swiper {
+        width: 100%;
+        height: 100%;
+        &:nth-of-type(1) {
+          padding-right: 20px;
+        }
+        &:last-of-type {
+          padding-left: 20px;
+        }
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+
+        .swiper-slide-item {
+          width: 100%;
+          height: inherit;
+          border-radius: inherit;
+          padding: 8px 16px;
+          .swiper-slide-item-top {
+            width: 100%;
+            height: 28px;
+            img {
+              width: 116px;
+              height: 27px;
+              object-fit: contain;
+            }
+          }
+
+          .swiper-slide-item-bottom {
+            width: 100%;
+            height: calc(100% - 15px);
+            display: flex;
+            flex-flow: row wrap;
+            .bottom-link {
+              width: 100%;
+              height: inherit;
+              text-decoration: none;
+              display: flex;
+              flex-flow: row wrap;
+              .bottom-right {
+                width: 35%;
+                height: inherit;
+                margin-top: 10px;
+              }
+              .bottom-left {
+                width: 65%;
+                height: inherit;
+                h3 {
+                  font-family: var(--fontfamily);
+                  font-size: 12px;
+                  text-align: right;
+                  color: #3f4064;
+                  margin-top: 30px;
+                  line-height: 25px;
+                }
+                .explain {
+                  width: 100%;
+                  height: 26px;
+                  display: flex;
+                  flex-flow: row-reverse wrap;
+                  align-items: center;
+                  justify-content: center;
+                  margin-top: 30px;
+                  img {
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 7px;
+                  }
+                  .number {
+                    font-family: var(--fontfamily);
+                    font-size: 12px;
+                    color: #34354e;
+                    margin-right: 270px;
+                  }
+                  .extra-explain {
+                    color: grey;
+                    text-align: right;
+                    font-family: var(--fontfamily);
+                    font-size: 10px;
+                    margin-right: 20px;
+                  }
+                  .circle {
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 15px;
+                    background-color: black;
+                  }
+                }
+                .price {
+                  width: 100%;
+                  height: 34px;
+                  display: flex;
+                  flex-flow: row-reverse wrap;
+                  justify-content: flex-start;
+                  align-items: center;
+                  margin-top: 15px;
+                  img {
+                    width: 18px;
+                    height: 18px;
+                  }
+                  .real-price {
+                    font-family: var(--fontfamily);
+                    color: #3f4064;
+                    font-size: 16px;
+                    margin-right: 240px;
+                  }
+                  .discount {
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: center;
+                    width: 34px;
+                    height: 20px;
+                    background-color: #d32f2f;
+                    border-radius: 10px;
+                    padding: 0px 4px;
+                    color: white;
+                    font-family: var(--fontfamily);
+                    font-size: 12px;
+                  }
+                }
+                .fake-price {
+                  font-family: var(--fontfamily);
+                  text-decoration: line-through;
+                  color: rgb(177, 177, 177);
+                  font-size: 12px;
+                  margin-right: 280px;
+                  margin-top: 5px;
+                }
+                .time {
+                  color: red;
+                  display: flex;
+                  flex-flow: row-reverse wrap;
+                  align-items: center;
+                  column-gap: 4px;
+                  margin-top: 7px;
+                  .hour,
+                  .minute,
+                  .second {
+                    font-family: var(--fontfamily);
+                    font-size: 12px;
+                  }
+                  .hour {
+                    margin-left: 5px;
+                  }
+                }
+                .end {
+                  display: flex;
+                  flex-flow: row wrap;
+                  justify-content: center;
+                  align-items: center;
+                  margin-top: 10px;
+                  .line-1,
+                  .line-2 {
+                    width: 35%;
+                    background-color: lightgrey;
+                    height: 2px;
+                  }
+                  .end-discount {
+                    font-family: var(--fontfamily);
+                    font-size: 13px;
+                    color: lightgrey;
+                    padding: 0px 8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: black;
+  width: 5px;
+  height: 5px;
+  transition: 300ms;
+}
+.swiper-pagination-bullet-active {
+  width: 17px !important;
+  height: 6px !important;
+  background-color: whitesmoke !important;
+  border-radius: 3px;
+}
+.slide-1 {
+  margin-left: 20px !important;
+}
+.second-one {
+  .explain {
+    justify-content: flex-start !important;
+    margin-left: 20px;
+  }
+}
+.third-one {
+  .explain {
+    margin-top: 0px !important;
+    .number {
+      margin-right: 400px;
+    }
+    .extra-explain {
+      margin-right: 10px !important;
+      margin-left: none !important;
+    }
+  }
+}
+.circle-2 {
+  width: 14px;
+  height: 14px;
+  border-radius: 15px;
+  background-color: rgb(215, 188, 32);
+}
+.fourth-one {
+  .explain {
+    .extra-explain {
+      margin-right: 5px !important;
+    }
+  }
+}
+.fifth-one{
+  width:100%;
+  height: inherit;
+  
+  .explain{
+    margin-top: 0px !important;
+    .extra-explain{
+      margin-right: 5px !important;
+    }
+    .circle-5{
+      width:14px;
+      height: 14px;
+      background-color: rgb(39, 208, 39);
+      border-radius: 15px;
+    }
+  }
+}
+.swiper-wrapper{
+  position: relative;
+}
+.transparent {
+  background-color: transparent !important;
+
+  .swiper-slide-black-item{
+    width:100%;
+    height: inherit;
+    background-color: rgb(76, 75, 75,0.9);
+    position: absolute;
+    left:620px;
+    border-radius: 8px;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    .lock{
+      width: 80px;
+      height: 80px;
+      background-color: #EF4056;
+      border-radius: 50%;
+      margin-top: 50px;
+      position: relative;
+      img{
+        width:160px;
+        height:160px;
+        position: absolute;
+        left:16px;
+        toP:15px;
+      }
+    }
+    .script{
+      color:white;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: var(--fontfamily);
+      text-align: center;
+      text-shadow: 0 0 1px white;
+      margin-top: 20px;
+    }
+  }
+}
+
+  

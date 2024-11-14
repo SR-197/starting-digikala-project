@@ -1,0 +1,7 @@
+.suggestion{
+    width:var(--width);
+    height: 60px;
+    object-fit: contain;
+    background-image: linear-gradient(to right, #ef4056 , #ef394e);
+    text-align: center;
+}

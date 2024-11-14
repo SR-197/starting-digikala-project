@@ -1,0 +1,94 @@
+@import "./setting.css";
+*{
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+}
+.register{
+    width:410px;
+    height: 490px;
+    border:1px solid lightgrey;
+    border-radius: 7px;
+    margin:110px auto ;
+    display: flex;
+    flex-flow: column;
+    padding: 32px;
+    .img{
+        margin:0px auto;
+        img{
+        width:100px;
+        height: 70px;
+        }
+    }
+    .register-in{
+        display: flex;
+        flex-flow: row-reverse wrap;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 7px;
+        text-align: right;
+        font-family: var(--fontfamily);
+        margin-top: 25px;
+        margin-bottom: 13px;
+        font-size: 13px;
+        span{
+            display:inline-block;
+            width:2px;
+            height: 20px;
+            background-color: black;
+        }
+    }
+    .hello{
+        font-family: var(--fontfamily);
+        text-align: right;
+        direction:rtl;
+        line-height: 30px;
+        font-size: 18px;
+        color:grey;
+    }
+    input[type="text"]{
+        width:99.9%;
+        height: 50px;
+        margin-top: 20px;
+        border-radius: 10px;
+        outline: none;
+        direction: rtl;
+        border:1px solid skyblue;
+        padding-right:15px; 
+        font-size: 20px;
+        color:grey;
+        caret-color: skyblue;
+        transition: 200ms;
+        &:hover{
+            border:1px solid red;
+            transition: 300ms;
+        }
+    }
+    button{
+        width:99.9%;
+        height: 50px;
+        background-color: #EF4056;
+        color:whitesmoke;
+        font-family: var(--fontfamily);
+        border-radius: 10px;
+        outline: none;
+        border:none;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+    a{
+        margin-top: 21px;
+        display: flex;
+        flex-flow: row wrap;
+        direction: rtl;
+        font-size: 16px;
+        font-weight: lighter;
+        text-decoration: none;
+        color:grey;
+        font-family: var(--fontfamily);
+        .skyblue{
+            
+            color:rgb(85, 192, 235) !important;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.sell-table-4 {
+  width: var(--width);
+  height: 825px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 15px;
+  .sell-table-4-center {
+    width: 88%;
+    height: inherit;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    padding: 0px 12px;
+    border-bottom: none;
+    .sell-table-4-center-top {
+      width: 100%;
+      height: 77px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      column-gap: 8px;
+      padding: 16px 0px;
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+      h3 {
+        font-family: var(--fontfamily);
+        font-size: 21px;
+      }
+    }
+    .sell-table-4-center-bottom {
+      display: flex;
+      flex-flow: row wrap;
+
+      .a-tablle-4 {
+        width: 218px;
+        height: 250px;
+        display: block;
+        text-decoration: none;
+        padding: 12px 8px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        border-bottom: 1px solid rgb(226, 224, 224);
+        border-left: 1px solid rgb(230, 228, 228);
+        &:last-of-type {
+          border-left: none;
+        }
+        .items {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-flow: row wrap;
+          .image {
+            width: 100%;
+            height: 150px;
+            .img {
+              width: 150px;
+              height: 150px;
+              margin-right: 20px;
+              border-radius: 10px;
+            }
+          }
+
+          .prices {
+            width:100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin-top: 10px;
+            .percent-table-4 {
+              width: 34px;
+              height: 20px;
+              font-family: var(--fontfamily);
+              color: white;
+              background-color: #D32F2F;
+              border-radius: 16px;
+              display: flex;
+              flex-flow: row wrap;
+              align-items: center;
+              justify-content: center;
+              margin-top: 7px;
+              h5 {
+                font-size: 12px;
+              }
+            }
+            .toman {
+                width:83%;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: flex-end;
+              .price-table-4 {
+                font-size: 16px;
+                font-family: var(--fontfamily);
+                color: black;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+              }
+              .svgplace {
+                margin-top: 7px;
+                .svg {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+
+          .second-price-table-4 {
+            width: 100%;
+            height: 20px;
+            font-family: var(--fontfamily);
+            font-size: 12px;
+            color: lightgrey;
+            text-decoration: line-through;
+            text-align: left;   
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.price-4{
+    margin-bottom: 25px;
+}

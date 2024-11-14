@@ -1,0 +1,170 @@
+.tomorrow-amazing-deal {
+  width: var(--width);
+  height: 110px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom:40px;
+  .tomorrow-amazing-deal-center {
+    width: 97%;
+    height: inherit;
+    background-color: #F5F2F2;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    position: relative;
+    .center-link {
+      width: 100%;
+      height: inherit;
+      text-decoration: none;
+      display: flex;
+      flex-flow: row wrap;
+      background-image: url(../../images/amazing-images/tomorrow-amazing-deal/pattern/incrediblePattern.svg);
+      object-fit: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      .right {
+        width: 45%;
+        height: inherit;
+        background-image: linear-gradient(to right, #F5F2F2, #F5F2F2, #f6d0d9);
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        .tomorrow-deal {
+          width: 230px;
+          height: 52px;
+          margin-right: 60px;
+          img {
+            width: 206;
+            height: 28px;
+          }
+          span {
+            display: block;
+            color: black;
+            font-family: var(--fontfamily);
+            font-size: 11px;
+          }
+        }
+        .clock{
+            width:108px;
+            height: 28px;
+            display: flex;
+            flex-flow: row-reverse wrap;
+            margin-bottom: 20px;
+            column-gap: 2px;
+            .hour,.minute,.second{
+                width:28px;
+                height: 28px;
+                background-color: white;
+                border-radius: 4px;
+                font-family: var(--fontfamily);
+                font-size: 15px;
+                color:black;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            span{
+                width:5px;
+                height:28px;
+                display: block;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                font-size: 16px;
+                font-weight: bolder;
+                
+            }
+        }
+      }
+    }
+    .left {
+      width: 55%;
+      height: inherit;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      column-gap: 7px;
+      .left-link-1 {
+        display: block;
+        text-decoration: none;
+        width: 74px;
+        height: 74px;
+        &:first-of-type {
+          margin-right: 150px;
+        }
+
+        .left-div-1 {
+          width: 74px;
+          height: 74px;
+          background-color: white;
+          border-radius: 50%;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          img {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+          }
+          .left-span-1 {
+            display: inline-block;
+            width: 35px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 4px;
+            font-family: var(--fontfamily);
+            font-size: 12px;
+            background-color: #d32f2f;
+            border-radius: 10px;
+            color: whitesmoke;
+            position: absolute;
+            bottom: 0px;
+            right: -2px;
+          }
+        }
+      }
+      .left-link-7 {
+        display: block;
+        text-decoration: none;
+        color: red;
+        width: 145px;
+        height: 50px;
+        .left-div-7 {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: flex-start;
+          column-gap: 7px;
+          width: inherit;
+          height: inherit;
+          background-color: white;
+          border-radius: 9999px;
+          padding: 12px 20px;
+          font-family: var(--fontfamily);
+          font-size: 12px;
+          .img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
