@@ -32,7 +32,6 @@
     right: 55px;
     z-index: 950;
     display: none;
-    border: 1px solid red;
     .modal-top {
       width: 100%;
       height: 50px;
@@ -51,86 +50,95 @@
         font-weight: 700;
       }
     }
-    .modal-bottom {
-      width: 100%;
+    .modal-bottom-wrapper{
+      width:100%;
       height: calc(100% - 50px);
-      padding: 12px 8px 8px 20px;
-      border-bottom-left-radius: inherit;
-      border-bottom-right-radius: inherit;
-      overflow-y: scroll;
-      
-      .bottom-header {
+      border:2px solid red;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius:15px;
+      overflow: hidden;
+      .modal-bottom {
         width: 100%;
-        height: 38px;
-        font-family: var(--fontfamily);
-        font-size: 17px;
-        .h3 {
-          width: inherit;
-          height: inherit;
-          margin-top: 10px;
-          display: flex;
-          flex-flow: row wrap;
-          div {
-            width: 40%;
+        height:100%;
+        padding: 12px 8px 8px 20px;
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+        overflow-y: scroll;
+        
+        .bottom-header {
+          width: 100%;
+          height: 38px;
+          font-family: var(--fontfamily);
+          font-size: 17px;
+          .h3 {
+            width: inherit;
             height: inherit;
-            font-size: 18px;
+            margin-top: 10px;
+            display: flex;
+            flex-flow: row wrap;
+            div {
+              width: 40%;
+              height: inherit;
+              font-size: 18px;
+            }
           }
         }
-      }
-      .bottom-script {
-        width: 100%;
-        height: 80px;
-        text-align: right;
-        font-family: var(--fontfamily);
-        font-size: 14px;
-        line-height: 30px;
-        font-weight: 700;
-      }
-      .guide-lines {
-        width: 100%;
-        height: 69px;
-        border: 1px solid lightgrey;
-        border-radius: 8px;
-        margin-bottom: 10px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px;
-        .info {
+        .bottom-script {
+          width: 100%;
+          height: 80px;
+          text-align: right;
           font-family: var(--fontfamily);
           font-size: 14px;
-          font-weight: 700px;
-          padding-bottom: 12px;
+          line-height: 30px;
+          font-weight: 700;
         }
-        .image {
-          padding-bottom: 12px;
-        }
-      }
-      .contact-us {
-        width:100%;
-        height: 58px;
-        display:flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        .contact-us-center {
-          width: 127px;
-          height: 48px;
-          background-color: #ef4056;
-          padding: 12px 16px;
-          border-radius: 3.2rem;
+        .guide-lines {
+          width: 100%;
+          height: 69px;
+          border: 1px solid lightgrey;
+          border-radius: 8px;
+          margin-bottom: 10px;
           display: flex;
           flex-flow: row wrap;
-          .text {
-            font-size: 14px;
+          justify-content: space-between;
+          align-items: center;
+          padding: 12px;
+          .info {
             font-family: var(--fontfamily);
-            color: white;
-            margin-top: 2px;
+            font-size: 14px;
+            font-weight: 700px;
+            padding-bottom: 12px;
           }
-          
+          .image {
+            padding-bottom: 12px;
+          }
+        }
+        .contact-us {
+          width:100%;
+          height: 58px;
+          display:flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          .contact-us-center {
+            width: 127px;
+            height: 48px;
+            background-color: #ef4056;
+            padding: 12px 16px;
+            border-radius: 3.2rem;
+            display: flex;
+            flex-flow: row wrap;
+            .text {
+              font-size: 14px;
+              font-family: var(--fontfamily);
+              color: white;
+              margin-top: 2px;
+            }
+            
+          }
         }
       }
     }
+    
   }
   input[type="radio"] {
     display: none;
